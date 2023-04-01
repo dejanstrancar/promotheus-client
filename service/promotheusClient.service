@@ -1,0 +1,11 @@
+[Unit]
+Description=Promotheus Client
+After=network.target
+StartLimitIntervalSec=0[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/var/promotheus-client
+
+[Install]
+WantedBy=multi-user.target
